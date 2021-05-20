@@ -1,0 +1,8 @@
+{
+  "cosa.samplename": "String",
+  "cosa.reference": "File",
+  "cosa.reference_index": "File",
+  "cosa.primer_trimmed_fastq": "File? (optional)",
+  "cosa.primer_trimmed_bam": "File? (optional)"
+}
+
