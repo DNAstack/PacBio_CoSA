@@ -59,6 +59,11 @@ workflow cosa {
 		File consensus_sequence_fragments = VCF_consensus_deepvariant.consensus_sequence_fragments
 		File lineage_metadata = assign_lineage.lineage_metadata
 	}
+
+	meta {
+		author: "Heather Ward"
+		email: "heather@dnastack.com"
+	}
 }
 
 task bam_to_fastq {
