@@ -86,7 +86,7 @@ task bam_to_fastq {
 	}
 
 	runtime {
-		docker: "dnastack/cosa:c7dc46d"
+		docker: "dnastack/cosa:c0a2fa8"
 		cpu: 2
 		memory: "7.5 GB"
 		disks: "local-disk " + disk_size + " HDD"
@@ -122,7 +122,7 @@ task align {
 	}
 
 	runtime {
-		docker: "dnastack/cosa:c7dc46d"
+		docker: "dnastack/cosa:c0a2fa8"
 		cpu: 2
 		memory: "7.5 GB"
 		disks: "local-disk " + disk_size + " HDD"
@@ -226,7 +226,7 @@ task VCF_consensus_deepvariant {
 	}
 
 	runtime {
-		docker: "dnastack/cosa:c7dc46d"
+		docker: "dnastack/cosa:c0a2fa8"
 		cpu: 2
 		memory: "7.5 GB"
 		disks: "local-disk " + disk_size + " HDD"
@@ -253,7 +253,7 @@ task assign_lineage {
 	}
 
 	runtime {
-		docker: "dnastack/pangolin:a1f8a3a"
+		docker: "dnastack/pangolin:ca81e2c"
 		cpu: threads
 		memory: "3.75 GB"
 		disks: "local-disk 50 HDD"
