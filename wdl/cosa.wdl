@@ -58,6 +58,7 @@ workflow cosa {
 		File consensus_sequence = VCF_consensus_deepvariant.consensus_sequence
 		File consensus_sequence_fragments = VCF_consensus_deepvariant.consensus_sequence_fragments
 		File lineage_metadata = assign_lineage.lineage_metadata
+		String lineage = assign_lineage.lineage
 	}
 
 	meta {
@@ -246,14 +247,17 @@ task assign_lineage {
 			--threads ~{threads} \
 			--outfile ~{samplename}.lineage.csv \
 			~{consensus_sequence}
+
+		cut -d , -f 2 ~{samplename}.lineage.csv | tail -1 > lineage.txt
 	}
 
 	output {
 		File lineage_metadata = "~{samplename}.lineage.csv"
+		String lineage = read_string("lineage.txt")
 	}
 
 	runtime {
-		docker: "dnastack/pangolin:ca81e2c"
+		docker: "dnastack/pangolin:a8ee773"
 		cpu: threads
 		memory: "3.75 GB"
 		disks: "local-disk 50 HDD"

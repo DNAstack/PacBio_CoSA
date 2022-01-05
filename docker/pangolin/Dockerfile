@@ -1,10 +1,10 @@
-# TAG dnastack/pangolin:ca81e2c
+# TAG dnastack/pangolin:a8ee773
 # Based on https://github.com/cov-lineages/pangolin/blob/master/Dockerfile
 FROM continuumio/miniconda3:4.9.2-alpine
 
 MAINTAINER Heather Ward <heather@dnastack.com>
 
-ENV PANGOLIN_GIT_HASH ca81e2cd633628ab4d02bb1965e4db67a700f2d0
+ENV PANGOLIN_GIT_HASH a8ee7732d9c2c1bc1422c0900cff0e80aa051cea
 
 # Install git for pangolin
 RUN apk update && \

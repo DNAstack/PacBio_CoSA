@@ -23,6 +23,7 @@ These values can be filled in in [the template inputs file](wdl/in.cosa.json).
 - `File consensus_sequence` - consensus sequence
 - `File consensus_sequence_fragments` - consensus sequence broken up by 'N' regions
 - `File lineage_metadata` - file containing lineage assignment (from `pangolin`) and tool version information
+- `String lineage` - the lineage assigned by `pangolin`
 
 
 ## Test data
