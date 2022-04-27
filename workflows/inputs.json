@@ -1,0 +1,7 @@
+{
+  "run_cosa.accession": "String",
+  "run_cosa.primer_trimmed_fastq": "File",
+  "run_cosa.reference": "File",
+  "run_cosa.reference_index": "File",
+  "run_cosa.container_registry": "dnastack"
+}
