@@ -82,7 +82,7 @@ task align {
 	}
 
 	runtime {
-		docker: "~{container_registry}/cosa:c0a2fa8"
+		docker: "~{container_registry}/cosa:0.0.1"
 		cpu: 2
 		memory: "7.5 GB"
 		disks: "local-disk 100 HDD"
@@ -116,7 +116,7 @@ task deepvariant {
 	}
 
 	runtime {
-		docker: "~{container_registry}/deepvariant:1.1.0"
+		docker: "google/deepvariant:1.1.0"
 		cpu: threads
 		memory: "32 GB"
 		disks: "local-disk 100 HDD"
@@ -193,7 +193,7 @@ task VCF_consensus_deepvariant {
 	}
 
 	runtime {
-		docker: "~{container_registry}/cosa:c0a2fa8"
+		docker: "~{container_registry}/cosa:0.0.1"
 		cpu: 2
 		memory: "7.5 GB"
 		disks: "local-disk 100 HDD"
