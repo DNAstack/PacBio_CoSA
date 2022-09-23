@@ -31,3 +31,10 @@ An input template file with some defaults pre-defined can be found [here](./work
 ## Test data
 
 PacBio SARS-CoV-2 runs are available from [the SRA](https://www.ncbi.nlm.nih.gov/sra?term=(((txid2697049%5BOrganism%3Anoexp%5D%20NOT%200%5BMbases))%20AND%20((txid2697049%5BOrganism%3Anoexp%5D%20NOT%200%5BMbases)%20AND%20%22platform%20pacbio%20smrt%22%5BProperties%5D))%20AND%20%22pacbio%20smrt%22%5BPlatform%5D). Most of this data is available as primer-trimmed fastqs, which can be used as input directly.
+
+
+## Containers
+
+Docker image definitions can be found in our [bioinformatics-public-docker-images](https://github.com/DNAstack/bioinformatics-public-docker-images) repo.
+
+All containers are publicly hosted in [DNAstack's container registry](https://hub.docker.com/u/dnastack).
